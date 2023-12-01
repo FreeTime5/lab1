@@ -15,16 +15,14 @@ function findRep(array) {
         let j = 1;
         for (; j < array.length; j++){
             if (!array[j].includes(subStr)){
+                i++;
+                length = 1;
                 break;
             }
         }
         if (j == array.length && subStr.length >= repStr.length){
             repStr = subStr;
             length++;
-        }
-        else{
-            i++;
-            length = 1;
         }
     }
     return repStr;
