@@ -19,3 +19,4 @@ for (let i = 0; i < array[2].length;){
         length = 1;
     }
 }
+console.log(repStr);
