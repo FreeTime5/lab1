@@ -1,1 +1,1 @@
-let a=process.argv,repStr="",subStr="",length=1;if(a.length>2){for(let e=0;e+length<=a[2].length;){subStr=a[2].substring(e,e+length);let t=3;for(;t<a.length&&a[t].includes(subStr);t++);t==a.length?(subStr.length>=repStr.length&&(repStr=subStr),length++):(e++,length=1)}}console.log(repStr);
+let a=process.argv,repStr="",subStr="",length=1;if(a.length>2)for(let t=0;t+length<=a[2].length;){subStr=a[2].substring(t,t+length);let e=3;for(;e<a.length&&a[e].includes(subStr);e++);e==a.length?(subStr.length>=repStr.length&&(repStr=subStr),length++):(t++,length=1)}console.log(repStr);
